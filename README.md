@@ -1,6 +1,5 @@
-[demonstration video](https://youtu.be/0_wCxNo7rVM)
-
 # Overview
+[demo video](https://youtu.be/0_wCxNo7rVM)
 
 The songs were played using the Riff structure, which contained a list of doubles for notes, and int length, and a float note_period. From here, I instantiated two Riffs: (1) song_to_play for the user to GET a song from the class server based on song_id and (2) song_to_create for the user to create their own Riff and POST to the class server. Our overarching state machine kept track of the PLAYBACK or RECORD mode. Additionally, I created three classes -- Button, SongIDGetter, and SongCreator -- each of which contain State Machines. The Button Class was coded in a previous weekly exercise and returns 1 if the button is pressed for a short duration and 2 if the button is pressed for a long duration. Two instances of the button class were initialized: for button1 and button2. button2 was responsible for switching between PLAYBACK and RECORD modes, and button1 was responsible for the state transitions within each mode, as will be specified.
 
